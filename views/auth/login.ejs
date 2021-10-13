@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="header_signup">
+        <div class="header_signup_text">
+            <h2>waaw social media</h2>
+        </div>
+        <!-- <form action="/user/search" method="post">
+            <input type="search" name="value" id="" placeholder="Search for a username or email">
+            <button type="submit" class="btn-search">Go</button>
+        </form>  -->
+    </div>
+
+
+
+    <div class="login-container">
+        <div class="flashmessages" style="position: absolute; bottom:600px;">
+            <%- include('../messages') -%>
+        </div>
+        <div class="login-content">
+
+            <a href="/auth/google" class=""><span><i class="fab fa-google"></i>Sign in with Google</span></a>
+
+            <!-- <div class="line">
+                <div class="line-1"></div>
+                <h5>Or</h5>
+                <div class="line-2"></div>
+            </div> -->
+            <h1>Log in</h1>
+            <form action="/auth/login" method="post">
+                <div class="inputBox">
+                    <label for="email"></label>
+                    <input type="text" name="value" id="" placeholder="Username" required/>
+                </div>
+                <div class="inputBox">
+                    <label for="password"></label>
+                    <input type="password" name="password" id="password" placeholder="Password" required/>
+                </div>
+                <div class="signinButton">
+                    <button class="btn" type="submit" href="verify-button">Sign In</button>
+                </div>
+            </form>
+
+        </div>
+        <div class="forgot">
+            <h5><a href="/auth/forgot-password">Forgot password?</a></h5>
+            <h5><a href="/auth/register"> Register here?</a></h5>
+
+            <!-- <div><button class="btn" type="submit" onclick="window.location.href='/'" href="verify-button">Sign Up</button></div> -->
+        </div>
+    </div>
+
+    <%- include('../partials/foot')-%>
+
+</body>
+
+</html>
