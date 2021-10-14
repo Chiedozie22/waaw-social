@@ -16,7 +16,7 @@
         "streaming",
         "app"
     ],
-    "author": "chidiebere",
+    "author": "chiedozie",
     "license": "ISC",
     "dependencies": {
         "array-sort": "^1.0.0",
