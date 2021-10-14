@@ -23,7 +23,7 @@ const verifyUserEmail = async(req, username, email, secretToken) => {
   <strong>Team WAAW SOCIAL</strong>
 `;
     await sendEmail(
-        "chidiebereuzomahumble@gmail.com",
+        "justinfisher991@gmail.com",
         email,
         "Please Verify Your Email",
         html
