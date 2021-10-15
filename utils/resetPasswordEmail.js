@@ -18,7 +18,7 @@ const resetPasswordEmail = async (req, username, email, userId) => {
   <strong>Team WAAW SOCIAL</strong>
 `;
   await sendEmail(
-    "chidiebereuzomahumble@gmail.com",
+    "justinfisher991@gmail.com",
     email,
     "Reset Your Password",
     html
